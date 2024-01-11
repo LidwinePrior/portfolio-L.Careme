@@ -1,0 +1,17 @@
+footer {
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+    flex-direction: row;
+    color: #5B4F47;
+
+    a {
+        color: #5B4F47;
+
+        &:hover {
+            color: #BD9479;
+        }
+
+    }
+}

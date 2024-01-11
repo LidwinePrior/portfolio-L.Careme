@@ -1,0 +1,81 @@
+.firstname,
+.lastname {
+  color: #BD9479;
+  font-size: 50px;
+}
+
+span {
+  color: rgb(238, 223, 204);
+}
+
+p {
+  color: #5B4F47;
+}
+
+nav {
+  font-size: 18px;
+}
+nav a {
+  text-decoration: none;
+  color: #5B4F47;
+  margin: 20px;
+}
+nav a:hover {
+  color: #BD9479;
+}
+
+body {
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
+}
+
+header {
+  height: 15%;
+  text-align: right;
+  margin: 20px;
+  background-color: white;
+}
+
+main {
+  height: 85vh;
+  background-color: #F8F7F4;
+}
+main .book {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-areas: "page1 page2";
+}
+main .book .page1 {
+  grid-area: page1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+main .book .page1 .me {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main .book .page2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+footer {
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: start;
+  flex-direction: row;
+  color: #5B4F47;
+}
+footer a {
+  color: #5B4F47;
+}
+footer a:hover {
+  color: #BD9479;
+}/*# sourceMappingURL=style.css.map */

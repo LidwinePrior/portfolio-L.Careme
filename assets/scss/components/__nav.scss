@@ -1,0 +1,13 @@
+nav {
+    font-size: 18px;
+
+    a {
+        text-decoration: none;
+        color: #5B4F47;
+        margin: 20px;
+
+        &:hover {
+            color: #BD9479;
+        }
+    }
+}
