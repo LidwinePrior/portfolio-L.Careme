@@ -9,6 +9,7 @@
 
 <body>
     <header>
+        <p class="logo">Lidwine Carême</p>
         <nav>
             <a href="index.html">Home</a>
             <a href="about.html">About</a>
@@ -17,20 +18,61 @@
         </nav>
     </header>
     <main>
-        <div class="book">
-            <div class="page1">
-                <div class="me">
-                    <h2 class="firstname">Lid<span>w</span>ine</h2>
-                    <h2 class="lastname">Car<span>ê</span>me</h2>
-                    <p>Junior Developer</p>
-                    <p>Back-end</p>
-                </div>
-            </div>
-            <div class="page2">
-                <img src="">
-            </div>
-        </div>
+        <section class="acceuil">
+            <h1>Lidwine Craême</h1>
+            <h2>Junior Developer</h2>
+            <h2>Back-end</h2>
+            <button>En voir plus</button>
+            <img src="./assets/images/ordi.jpg" alt="ordinateur">
+        </section>
+
+        <section class="portfolio">
+            <h3>Portfolio</h3>
+            <img src="./assets/images/meteo.jpg" alt="weather">
+            <img src="./assets/images/food.jpg" alt="food">
+            <img src="./assets/images/pikachu.jpg" alt="pokemon">
+            <img src="./assets/images/database.jpg" alt="database">
+        </section>
+
+        <section class="about">
+            <h3>A propos</h3>
+            <p>
+                Avide de connaissances et de nouveaux défis, je me suis aventurée dans le développement web et plus
+                précisément en back-end. Quelle aventure!
+                Empathique, sociable et généreuse, qualités qui m'aident à m'intégrer dans un groupe et à comprendre mon
+                environnement.
+                Organisée et "légèrement" perfectionniste, j'aime le travail bien fait. Et parfois, un peu drôle. Pour
+                le moment, j’apprends le développement web chez <a
+                    href="https://becode.org/fr/les-formations/junior-developer/" target="_blank">BeCode</a>.
+                Vous trouverez mes travaux réalisés lors de cette formation sur <a
+                    href="https://github.com/LidwinePrior" target="_blank">github</a>. Si vous voulez en savoir plus
+                sur moi, vous pouvez consulter mon <a href="https://www.linkedin.com/in/lidwine-careme/"
+                    target="_blank">linkedIn</a> et pour des infos sur mon parcours, c’est par <a
+                    href="./assets/images/CV Lidwine Carême.pdf" target="_blank">ICI</a>.
+            </p>
+        </section>
+
+        <section class="contact">
+            <h3>Contact</h3>
+            <form>
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email">
+                <label for="tel">Phone</label>
+                <input type="tel" id="tel" name="tel">
+                <label for="msg">Message</label>
+                <textarea id="msg" name="msg"></textarea>
+            </form>
+            <button type="submit" onclick="alert('Your email was sent with successfully.')">Send</button>
+        </section>
     </main>
+    <footer>
+        <p class="logo">Lidwine Carême</p>
+        <img src="./assets/images/github.svg" alt="github">
+        <img src="./assets/images/linkedin-in.svg" alt="linkedIn">
+        <img src="assets/images/arrow-up-solid.svg" alt="arrow-up">
+    </footer>
 </body>
 
 </html>
