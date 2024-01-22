@@ -1,0 +1,28 @@
+body {
+    color: white;
+
+    a {
+        color: white;
+    }
+
+    p {
+        font-size: 18px;
+    }
+
+    h1,
+    h3 {
+        font-size: 64px;
+    }
+
+    h3 {
+
+        display: inline-block;
+        border-bottom: 8px solid white;
+        padding-bottom: 30px;
+
+    }
+
+    button {
+        font-size: 18px;
+    }
+}

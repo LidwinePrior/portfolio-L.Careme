@@ -1,1 +1,228 @@
-/*# sourceMappingURL=style.css.map */
+@charset "UTF-8";
+body {
+  color: white;
+}
+body a {
+  color: white;
+}
+body p {
+  font-size: 18px;
+}
+body h1,
+body h3 {
+  font-size: 64px;
+}
+body h3 {
+  display: inline-block;
+  border-bottom: 8px solid white;
+  padding-bottom: 30px;
+}
+body button {
+  font-size: 18px;
+}
+
+.navigation .hamburger-menu {
+  display: block;
+  cursor: pointer;
+}
+.navigation .hamburger-menu .hamburger {
+  width: 30px;
+  height: 30px;
+}
+.navigation .mobile-nav {
+  /* Par défaut, la liste de navigation mobile est cachée */
+  display: none;
+  flex-direction: column;
+  background-color: #333;
+  position: absolute;
+  top: 5px;
+  right: 0;
+  width: 150px;
+  padding: 20px;
+  box-sizing: border-box;
+  z-index: 2;
+}
+.navigation .mobile-nav a {
+  color: white;
+  text-decoration: none;
+  margin: 15px;
+}
+.navigation .desktop-nav {
+  display: none;
+}
+
+.show-more {
+  height: 50px;
+  width: 150px;
+  border: 1px solid white;
+  background-color: black;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 100;
+}
+
+.send {
+  height: 50px;
+  width: 100px;
+  background-color: white;
+  border-radius: 10px 0;
+  text-transform: uppercase;
+  font-weight: 100;
+}
+
+.navigation .hamburger-menu {
+  display: block;
+  cursor: pointer;
+}
+.navigation .hamburger-menu .hamburger {
+  width: 30px;
+  height: 30px;
+}
+.navigation .mobile-nav {
+  /* Par défaut, la liste de navigation mobile est cachée */
+  display: none;
+  flex-direction: column;
+  background-color: #333;
+  position: absolute;
+  top: 5px;
+  right: 0;
+  width: 150px;
+  padding: 20px;
+  box-sizing: border-box;
+  z-index: 2;
+}
+.navigation .mobile-nav a {
+  color: white;
+  text-decoration: none;
+  margin: 15px;
+}
+.navigation .desktop-nav {
+  display: none;
+}
+
+.form {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 30px 0;
+  margin: 80px auto;
+  padding: 5%;
+  width: 50%;
+  display: grid;
+  grid-template-areas: "nom" "prenom" "email" "gsm" "message" "bouton";
+}
+.form input,
+.form textarea {
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid white;
+  color: white;
+  outline: none;
+  padding-bottom: 10px;
+  font-size: 18px;
+  font-weight: 700;
+  margin: 3%;
+}
+.form label {
+  font-size: 18px;
+  margin: 3%;
+}
+.form .nom {
+  grid-area: nom;
+}
+.form .prenom {
+  grid-area: prenom;
+}
+.form .mail {
+  grid-area: email;
+}
+.form .gsm {
+  grid-area: gsm;
+}
+.form .message {
+  display: flex;
+  flex-direction: column;
+  grid-area: message;
+}
+.form .bouton {
+  grid-area: bouton;
+  text-align: center;
+  margin-top: 50px;
+}
+
+body {
+  background-color: black;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  margin: 5%;
+  height: 40vh;
+  position: relative;
+}
+header .top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+header .presentation {
+  text-align: center;
+  z-index: 2;
+  position: relative;
+}
+header .presentation .ordi {
+  width: 500px;
+  position: absolute;
+  right: 0%;
+  bottom: 0%;
+  z-index: 1;
+}
+header .button {
+  position: absolute;
+  bottom: 30%;
+  left: 15%;
+}
+
+main .portfolio h3 {
+  margin: 5%;
+}
+main .portfolio .projects {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  width: 100%;
+}
+main .portfolio .projects .proj {
+  width: 100%;
+  position: relative;
+}
+main .portfolio .projects .proj img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .portfolio .projects .proj:hover {
+  opacity: 0.2;
+}
+main .about {
+  margin: 5%;
+}
+main .about .description {
+  flex-wrap: wrap;
+}
+main .about .description .picture-of-me {
+  float: right;
+  width: 200px;
+  margin-top: 20px;
+}
+main .contact {
+  margin: 5%;
+}
+
+footer .arrow {
+  position: fixed;
+  width: 30px;
+  height: 30px;
+  background-color: white;
+}/*# sourceMappingURL=style.css.map */

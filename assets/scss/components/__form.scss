@@ -1,0 +1,61 @@
+.form {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 30px 0;
+    margin: 80px auto;
+    padding: 5%;
+    width: 50%;
+    display: grid;
+    grid-template-areas:
+        "nom"
+        "prenom"
+        "email"
+        "gsm"
+        "message"
+        "bouton";
+
+    input,
+    textarea {
+        background-color: transparent;
+        border: none;
+        border-bottom: 2px solid white;
+        color: white;
+        outline: none;
+        padding-bottom: 10px;
+        font-size: 18px;
+        font-weight: 700;
+        margin: 3%;
+    }
+
+    label {
+        font-size: 18px;
+        margin: 3%;
+    }
+
+    .nom {
+        grid-area: nom;
+    }
+
+    .prenom {
+        grid-area: prenom;
+    }
+
+    .mail {
+        grid-area: email;
+    }
+
+    .gsm {
+        grid-area: gsm;
+    }
+
+    .message {
+        display: flex;
+        flex-direction: column;
+        grid-area: message;
+    }
+
+    .bouton {
+        grid-area: bouton;
+        text-align: center;
+        margin-top: 50px;
+    }
+}

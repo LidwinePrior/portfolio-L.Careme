@@ -1,0 +1,39 @@
+header {
+    margin: 5%;
+    height: 40vh;
+    position: relative;
+
+
+    .top {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .presentation {
+        text-align: center;
+        z-index: 2;
+        position: relative;
+
+        .ordi {
+            width: 500px;
+            position: absolute;
+            right: 0%;
+            bottom: 0%;
+            z-index: 1;
+        }
+    }
+
+
+
+    .button {
+        position: absolute;
+        bottom: 30%;
+        left: 15%;
+    }
+
+
+
+
+
+}

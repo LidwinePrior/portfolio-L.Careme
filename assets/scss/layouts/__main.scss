@@ -1,0 +1,63 @@
+main {
+    .portfolio {
+        h3 {
+            margin: 5%;
+        }
+
+        .projects {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            width: 100%;
+
+            .proj {
+                width: 100%;
+                position: relative;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+
+                &:hover {
+                    opacity: 0.2;
+                }
+            }
+        }
+    }
+
+
+
+    .about {
+        margin: 5%;
+
+        .description {
+            flex-wrap: wrap;
+
+            .picture-of-me {
+                float: right;
+                width: 200px;
+                margin-top: 20px;
+            }
+        }
+
+    }
+
+    .contact {
+        margin: 5%;
+    }
+
+
+
+    // @media screen and (min-width: 750px) {
+    //     .portfolio {
+    //         .projects {
+    //             display: grid;
+    //             grid-template-columns: 1fr 1fr 1fr 1fr;
+    //             grid-template-rows: 1fr;
+    //         }
+    //     }
+    // }
+
+}

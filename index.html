@@ -2,77 +2,160 @@
 <html lang="en">
 
 <head>
+    <meta charset="UTF-8">
     <title>Lidwine Carême</title>
     <meta name="author" content="Lidwine">
     <link rel="stylesheet" href="./assets/scss/style.css">
 </head>
 
 <body>
+
     <header>
-        <p class="logo">Lidwine Carême</p>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="portfolio.html">Portfolio</a>
-            <a href="contact.html">Contact</a>
-        </nav>
+        <div class="top">
+            <div class="logo">
+                <p class="mylogo">Lidwine Carême</p>
+            </div>
+            <div class="navigation">
+                <div class="hamburger-menu" onclick="toggleMobileMenu()">
+                    <img class="hamburger" src="./assets/images/hamburger-menu.svg" alt="hamburger-menu">
+                </div>
+
+
+                <!-- La navigation mobile en dehors de la div .hamburger-menu -->
+                <div class="mobile-nav">
+                    <a href="#Home" onclick="closeMobileMenu()">Acceuil</a>
+                    <a href="#Portfolio" onclick="closeMobileMenu()">Portfolio</a>
+                    <a href="#About" onclick="closeMobileMenu()">A propos</a>
+                    <a href="#Contact" onclick="closeMobileMenu()">Contact</a>
+                </div>
+
+
+                <nav class="desktop-nav">
+                    <a href="#Home">Acceuil</a>
+                    <a href="#Portfolio">A propos</a>
+                    <a href="#About">Portfolio</a>
+                    <a href="#Contact">Contact</a>
+                </nav>
+            </div>
+        </div>
+
+        <div class="presentation">
+            <h1 class="my-name">Lidwine Carême</h1>
+            <h2 class="junior">Junior Developer</h2>
+            <h2 class="back">Back-end</h2>
+            <img class="ordi" src="./assets/images/ordi.jpg" alt="ordinateur">
+
+        </div>
+
+
+        <div class="button">
+            <button class="show-more">En voir plus</button>
+        </div>
     </header>
+
+
+
+
     <main>
-        <section class="acceuil">
-            <h1>Lidwine Craême</h1>
-            <h2>Junior Developer</h2>
-            <h2>Back-end</h2>
-            <button>En voir plus</button>
-            <img src="./assets/images/ordi.jpg" alt="ordinateur">
-        </section>
+        <section class="portfolio" id="Portfolio">
 
-        <section class="portfolio">
             <h3>Portfolio</h3>
-            <img src="./assets/images/meteo.jpg" alt="weather">
-            <img src="./assets/images/food.jpg" alt="food">
-            <img src="./assets/images/pikachu.jpg" alt="pokemon">
-            <img src="./assets/images/database.jpg" alt="database">
+
+
+            <div class="projects">
+                <div class="proj">
+                    <img src="./assets/images/meteo.jpg" alt="weather" class="weather">
+                </div>
+                <div class="proj">
+                    <img src="./assets/images/food.jpg" alt="food" class="food">
+                </div>
+                <div class="proj">
+                    <img src="./assets/images/pikachu.jpg" alt="pokemon" class="pokemon">
+                </div>
+                <div class="proj">
+                    <img src="./assets/images/database.jpg" alt="database" class="database">
+                </div>
+            </div>
         </section>
 
-        <section class="about">
+
+
+
+        <section class="about" id="About">
+
             <h3>A propos</h3>
-            <p>
-                Avide de connaissances et de nouveaux défis, je me suis aventurée dans le développement web et plus
-                précisément en back-end. Quelle aventure!
-                Empathique, sociable et généreuse, qualités qui m'aident à m'intégrer dans un groupe et à comprendre mon
-                environnement.
-                Organisée et "légèrement" perfectionniste, j'aime le travail bien fait. Et parfois, un peu drôle. Pour
-                le moment, j’apprends le développement web chez <a
-                    href="https://becode.org/fr/les-formations/junior-developer/" target="_blank">BeCode</a>.
-                Vous trouverez mes travaux réalisés lors de cette formation sur <a
-                    href="https://github.com/LidwinePrior" target="_blank">github</a>. Si vous voulez en savoir plus
-                sur moi, vous pouvez consulter mon <a href="https://www.linkedin.com/in/lidwine-careme/"
-                    target="_blank">linkedIn</a> et pour des infos sur mon parcours, c’est par <a
-                    href="./assets/images/CV Lidwine Carême.pdf" target="_blank">ICI</a>.
-            </p>
+
+            <div class="description">
+                <img src="./assets/images/moi.jpg" alt="lidwine" class="picture-of-me">
+
+                <p>
+                    Avide de connaissances et de nouveaux défis, je me suis aventurée dans le développement web et
+                    plus
+                    précisément en back-end. Quelle aventure!</p>
+                <p>Empathique, sociable et généreuse, qualités qui m'aident à m'intégrer dans un groupe et à
+                    comprendre mon
+                    environnement.
+                    Organisée et "légèrement" perfectionniste, j'aime le travail bien fait. Et parfois, un peu
+                    drôle. </p>
+                <p>
+                    Pour le moment, j’apprends le développement web chez <a
+                        href="https://becode.org/fr/les-formations/junior-developer/" target="_blank">BeCode</a>.
+                    Vous trouverez mes travaux réalisés lors de cette formation sur <a
+                        href="https://github.com/LidwinePrior" target="_blank">github</a>. Si vous voulez en savoir
+                    plus
+                    sur moi, vous pouvez consulter mon <a href="https://www.linkedin.com/in/lidwine-careme/"
+                        target="_blank">linkedIn</a> et pour des infos sur mon parcours, c’est par <a
+                        href="./assets/images/CV Lidwine Carême.pdf" target="_blank">ICI</a>.
+                </p>
+
+
+            </div>
         </section>
 
-        <section class="contact">
+
+
+
+        <section class="contact" id="Contact">
+
             <h3>Contact</h3>
-            <form>
-                <label for="name">Name</label>
-                <input type="text" id="name" name="name">
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email">
-                <label for="tel">Phone</label>
-                <input type="tel" id="tel" name="tel">
-                <label for="msg">Message</label>
-                <textarea id="msg" name="msg"></textarea>
+
+            <form class="form" action="#">
+                <div class="nom">
+                    <input type="text" id="lastname" name="lastname" placeholder="Nom">
+                </div>
+                <div class="prenom">
+                    <input type="text" id="firstname" name="firstname" placeholder="Prénom">
+                </div>
+                <div class="mail">
+                    <input type="email" id="email" name="email" placeholder="Email">
+                </div>
+                <div class="gsm">
+                    <input type="phone" id="phone" name="phone" placeholder="Téléphone">
+                </div>
+                <div class="message">
+                    <textarea id="msg" name="msg" placeholder="Message"></textarea>
+                </div>
+                <div class="bouton">
+                    <button class="send" id="submit" type="submit"
+                        onclick="alert('Ton email a été envoyé avce succès!')">Envoyer</button>
+                </div>
             </form>
-            <button type="submit" onclick="alert('Your email was sent with successfully.')">Send</button>
         </section>
     </main>
+
+
+
+
     <footer>
         <p class="logo">Lidwine Carême</p>
         <img src="./assets/images/github.svg" alt="github">
         <img src="./assets/images/linkedin-in.svg" alt="linkedIn">
-        <img src="assets/images/arrow-up-solid.svg" alt="arrow-up">
+        <div class="arrow">
+            <img src="assets/images/arrow-up-solid.svg" alt="arrow-up">
+        </div>
     </footer>
+
+    <script src="./assets/js/script.js"></script>
 </body>
 
 </html>
