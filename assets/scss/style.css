@@ -4,13 +4,15 @@ body {
 }
 body a {
   color: white;
+  text-decoration: none;
+  font-size: 15px;
 }
 body p {
-  font-size: 18px;
+  font-size: 15px;
 }
 body h1,
 body h3 {
-  font-size: 64px;
+  font-size: 32px;
 }
 body h3 {
   display: inline-block;
@@ -18,7 +20,19 @@ body h3 {
   padding-bottom: 30px;
 }
 body button {
-  font-size: 18px;
+  font-size: 15px;
+}
+@media screen and (min-width: 750px) {
+  body p {
+    font-size: 27px;
+  }
+  body h1,
+  body h3 {
+    font-size: 64px;
+  }
+  body a {
+    font-size: 27px;
+  }
 }
 
 .navigation .hamburger-menu {
@@ -33,32 +47,50 @@ body button {
   /* Par défaut, la liste de navigation mobile est cachée */
   display: none;
   flex-direction: column;
-  background-color: #333;
+  background-color: rgb(0, 0, 0);
   position: absolute;
-  top: 5px;
+  top: 25px;
   right: 0;
-  width: 150px;
+  width: 100px;
   padding: 20px;
   box-sizing: border-box;
   z-index: 2;
 }
 .navigation .mobile-nav a {
-  color: white;
-  text-decoration: none;
-  margin: 15px;
+  margin: 15px 0;
 }
 .navigation .desktop-nav {
   display: none;
 }
+@media screen and (min-width: 750px) {
+  .navigation .hamburger-menu {
+    display: none;
+  }
+  .navigation .mobile-nav {
+    display: none;
+  }
+  .navigation .desktop-nav {
+    display: flex;
+  }
+  .navigation .desktop-nav a {
+    margin: 0 35px;
+  }
+}
 
 .show-more {
-  height: 50px;
-  width: 150px;
+  height: 30px;
+  width: 130px;
   border: 1px solid white;
-  background-color: black;
+  background-color: #000000;
   color: white;
   text-transform: uppercase;
   font-weight: 100;
+}
+@media screen and (min-width: 750px) {
+  .show-more {
+    height: 50px;
+    width: 250px;
+  }
 }
 
 .send {
@@ -82,22 +114,34 @@ body button {
   /* Par défaut, la liste de navigation mobile est cachée */
   display: none;
   flex-direction: column;
-  background-color: #333;
+  background-color: rgb(0, 0, 0);
   position: absolute;
-  top: 5px;
+  top: 25px;
   right: 0;
-  width: 150px;
+  width: 100px;
   padding: 20px;
   box-sizing: border-box;
   z-index: 2;
 }
 .navigation .mobile-nav a {
-  color: white;
-  text-decoration: none;
-  margin: 15px;
+  margin: 15px 0;
 }
 .navigation .desktop-nav {
   display: none;
+}
+@media screen and (min-width: 750px) {
+  .navigation .hamburger-menu {
+    display: none;
+  }
+  .navigation .mobile-nav {
+    display: none;
+  }
+  .navigation .desktop-nav {
+    display: flex;
+  }
+  .navigation .desktop-nav a {
+    margin: 0 35px;
+  }
 }
 
 .form {
@@ -105,7 +149,7 @@ body button {
   border-radius: 30px 0;
   margin: 80px auto;
   padding: 5%;
-  width: 50%;
+  width: 70%;
   display: grid;
   grid-template-areas: "nom" "prenom" "email" "gsm" "message" "bouton";
 }
@@ -138,14 +182,22 @@ body button {
   grid-area: gsm;
 }
 .form .message {
-  display: flex;
-  flex-direction: column;
   grid-area: message;
 }
 .form .bouton {
   grid-area: bouton;
   text-align: center;
   margin-top: 50px;
+}
+@media screen and (min-width: 750px) {
+  .form .form {
+    border: 1px solid pink;
+    grid-template-areas: "nom prenom" "email gsm" "message message" "bouton bouton";
+  }
+}
+
+.logo .mylogo {
+  margin: 0;
 }
 
 body {
@@ -156,35 +208,64 @@ body {
 }
 
 header {
-  margin: 5%;
-  height: 40vh;
+  margin: 0 5%;
+  height: 50vh;
   position: relative;
 }
 header .top {
+  padding-top: 25px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  position: relative;
+  z-index: 3;
 }
 header .presentation {
   text-align: center;
   z-index: 2;
   position: relative;
 }
-header .presentation .ordi {
-  width: 500px;
+header .ordi {
+  width: 250px;
   position: absolute;
-  right: 0%;
-  bottom: 0%;
+  right: -10px;
+  bottom: 0px;
   z-index: 1;
 }
 header .button {
   position: absolute;
-  bottom: 30%;
-  left: 15%;
+  bottom: -90px;
+  left: 0px;
+  position: relative;
+  z-index: 4;
+}
+@media screen and (min-width: 750px) {
+  header {
+    height: 100vh;
+  }
+  header .presentation h1 {
+    padding: 40px;
+    text-align: center;
+  }
+  header .presentation h2 {
+    text-align: left;
+    padding-left: 400px;
+  }
+  header .ordi {
+    width: 900px;
+    right: -45px;
+    bottom: -250px;
+  }
+  header .button {
+    padding-left: 400px;
+    bottom: -250px;
+  }
 }
 
 main .portfolio h3 {
   margin: 5%;
+  position: relative;
+  z-index: 5;
 }
 main .portfolio .projects {
   display: grid;
@@ -209,20 +290,72 @@ main .about {
   margin: 5%;
 }
 main .about .description {
+  margin: auto;
   flex-wrap: wrap;
+  width: 80%;
 }
 main .about .description .picture-of-me {
   float: right;
   width: 200px;
-  margin-top: 20px;
+  margin-left: 20px;
 }
 main .contact {
   margin: 5%;
 }
+@media screen and (min-width: 750px) {
+  main .portfolio {
+    height: 100vh;
+  }
+  main .portfolio .projects {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+  }
+  main .about {
+    height: 100vh;
+  }
+  main .about .description .picture-of-me {
+    width: 400px;
+    margin-left: 60px;
+  }
+  main .contact {
+    height: 100vh;
+  }
+}
 
-footer .arrow {
-  position: fixed;
+footer {
+  text-align: center;
+  display: grid;
+  grid-template-areas: "logo reseaux reseaux arrow";
+}
+footer .logo {
+  grid-area: logo;
+}
+footer .reseaux {
+  grid-area: reseaux;
+  display: flex;
+  flex-direction: row;
+}
+footer .reseaux .div-github img {
+  width: 30px;
+  height: 30px;
+}
+footer .reseaux .div-linkedIn {
   width: 30px;
   height: 30px;
   background-color: white;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .arrow {
+  grid-area: arrow;
+  width: 30px;
+  height: 30px;
+  background-color: white;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }/*# sourceMappingURL=style.css.map */

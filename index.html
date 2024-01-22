@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <title>Lidwine Carême</title>
     <meta name="author" content="Lidwine">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/scss/style.css">
 </head>
 
@@ -39,17 +40,16 @@
             </div>
         </div>
 
-        <div class="presentation">
+        <div class="presentation" id="#Home">
             <h1 class="my-name">Lidwine Carême</h1>
             <h2 class="junior">Junior Developer</h2>
             <h2 class="back">Back-end</h2>
-            <img class="ordi" src="./assets/images/ordi.jpg" alt="ordinateur">
-
         </div>
 
+        <img class="ordi" src="./assets/images/ordi.jpg" alt="ordinateur">
 
         <div class="button">
-            <button class="show-more">En voir plus</button>
+            <button class="show-more"><a href="#About">En voir plus</a></button>
         </div>
     </header>
 
@@ -121,23 +121,22 @@
 
             <form class="form" action="#">
                 <div class="nom">
-                    <input type="text" id="lastname" name="lastname" placeholder="Nom">
+                    <input type="text" id="lastname" name="lastname" placeholder="Nom" required>
                 </div>
                 <div class="prenom">
-                    <input type="text" id="firstname" name="firstname" placeholder="Prénom">
+                    <input type="text" id="firstname" name="firstname" placeholder="Prénom" required>
                 </div>
                 <div class="mail">
-                    <input type="email" id="email" name="email" placeholder="Email">
+                    <input type="email" id="email" name="email" placeholder="Email" required>
                 </div>
                 <div class="gsm">
-                    <input type="phone" id="phone" name="phone" placeholder="Téléphone">
+                    <input type="phone" id="phone" name="phone" placeholder="Téléphone" required>
                 </div>
                 <div class="message">
-                    <textarea id="msg" name="msg" placeholder="Message"></textarea>
+                    <textarea id="msg" name="msg" placeholder="Message" required></textarea>
                 </div>
                 <div class="bouton">
-                    <button class="send" id="submit" type="submit"
-                        onclick="alert('Ton email a été envoyé avce succès!')">Envoyer</button>
+                    <button class="send" id="submit" type="submit">Envoyer</button>
                 </div>
             </form>
         </section>
@@ -147,15 +146,24 @@
 
 
     <footer>
-        <p class="logo">Lidwine Carême</p>
-        <img src="./assets/images/github.svg" alt="github">
-        <img src="./assets/images/linkedin-in.svg" alt="linkedIn">
+        <div class="logo">
+            <p class="mylogo">Lidwine Carême</p>
+        </div>
+        <div class="reseaux">
+            <div class="div-github">
+                <a href="https://github.com/LidwinePrior" target="_blank"><img src="./assets/images/github.svg"
+                        alt="github"></a>
+            </div>
+            <div class="div-linkedIn">
+                <a href="https://www.linkedin.com/in/lidwine-careme/" target="_blank"><img
+                        src="./assets/images/linkedin-in.svg" alt="linkedIn"></a>
+            </div>
+        </div>
         <div class="arrow">
-            <img src="assets/images/arrow-up-solid.svg" alt="arrow-up">
+            <a href="#Home"><img src="assets/images/arrow-up-solid.svg" alt="arrow-up"></a>
         </div>
     </footer>
 
-    <script src="./assets/js/script.js"></script>
 </body>
 
 </html>

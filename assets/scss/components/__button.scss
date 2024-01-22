@@ -1,12 +1,16 @@
 .show-more {
-    height: 50px;
-    width: 150px;
+    height: 30px;
+    width: 130px;
     border: 1px solid white;
-    background-color: black;
+    background-color: #000000;
     color: white;
     text-transform: uppercase;
-
     font-weight: 100;
+
+    @media screen and (min-width: 750px) {
+        height: 50px;
+        width: 250px;
+    }
 }
 
 .send {

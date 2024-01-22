@@ -2,6 +2,8 @@ main {
     .portfolio {
         h3 {
             margin: 5%;
+            position: relative;
+            z-index: 5;
         }
 
         .projects {
@@ -33,12 +35,14 @@ main {
         margin: 5%;
 
         .description {
+            margin: auto;
             flex-wrap: wrap;
+            width: 80%;
 
             .picture-of-me {
                 float: right;
                 width: 200px;
-                margin-top: 20px;
+                margin-left: 20px;
             }
         }
 
@@ -50,14 +54,32 @@ main {
 
 
 
-    // @media screen and (min-width: 750px) {
-    //     .portfolio {
-    //         .projects {
-    //             display: grid;
-    //             grid-template-columns: 1fr 1fr 1fr 1fr;
-    //             grid-template-rows: 1fr;
-    //         }
-    //     }
-    // }
+    @media screen and (min-width: 750px) {
+        .portfolio {
+            height: 100vh;
+
+            .projects {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+                grid-template-rows: 1fr;
+            }
+        }
+
+        .about {
+            height: 100vh;
+
+            .description {
+
+                .picture-of-me {
+                    width: 400px;
+                    margin-left: 60px;
+                }
+            }
+        }
+
+        .contact {
+            height: 100vh;
+        }
+    }
 
 }

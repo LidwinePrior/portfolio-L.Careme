@@ -1,39 +1,66 @@
 header {
-    margin: 5%;
-    height: 40vh;
+    margin: 0 5%;
+    height: 50vh;
     position: relative;
 
 
     .top {
+        padding-top: 25px;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        position: relative;
+        z-index: 3;
     }
 
     .presentation {
         text-align: center;
         z-index: 2;
         position: relative;
-
-        .ordi {
-            width: 500px;
-            position: absolute;
-            right: 0%;
-            bottom: 0%;
-            z-index: 1;
-        }
     }
 
-
+    .ordi {
+        width: 250px;
+        position: absolute;
+        right: -10px;
+        bottom: 0px;
+        z-index: 1;
+    }
 
     .button {
         position: absolute;
-        bottom: 30%;
-        left: 15%;
+        bottom: -90px;
+        left: 0px;
+        position: relative;
+        z-index: 4;
     }
 
+    @media screen and (min-width: 750px) {
 
+        height: 100vh;
 
+        .presentation {
+            h1 {
+                padding: 40px;
+                text-align: center;
+            }
 
+            h2 {
+                text-align: left;
+                padding-left: 400px;
+            }
+        }
+
+        .ordi {
+            width: 900px;
+            right: -45px;
+            bottom: -250px;
+        }
+
+        .button {
+            padding-left: 400px;
+            bottom: -250px;
+        }
+    }
 
 }

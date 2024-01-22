@@ -1,8 +1,45 @@
 footer {
+    text-align: center;
+    display: grid;
+    grid-template-areas:
+        "logo reseaux reseaux arrow";
+
+    .logo {
+        grid-area: logo;
+    }
+
+    .reseaux {
+        grid-area: reseaux;
+        display: flex;
+        flex-direction: row;
+
+        .div-github {
+
+            img {
+                width: 30px;
+                height: 30px;
+            }
+        }
+
+        .div-linkedIn {
+            width: 30px;
+            height: 30px;
+            background-color: white;
+            border-radius: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
     .arrow {
-        position: fixed;
+        grid-area: arrow;
         width: 30px;
         height: 30px;
         background-color: white;
+        border-radius: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }
