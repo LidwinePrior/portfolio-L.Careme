@@ -40,14 +40,17 @@ header {
         height: 100vh;
 
         .presentation {
+            width: 50%;
+
             h1 {
+                text-align: right;
                 padding: 40px;
-                text-align: center;
             }
 
             h2 {
+
                 text-align: left;
-                padding-left: 400px;
+                padding-left: 200px;
             }
         }
 
@@ -58,7 +61,6 @@ header {
         }
 
         .button {
-            padding-left: 400px;
             bottom: -250px;
         }
     }

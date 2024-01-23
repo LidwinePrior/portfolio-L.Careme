@@ -243,13 +243,16 @@ header .button {
   header {
     height: 100vh;
   }
+  header .presentation {
+    width: 50%;
+  }
   header .presentation h1 {
+    text-align: right;
     padding: 40px;
-    text-align: center;
   }
   header .presentation h2 {
     text-align: left;
-    padding-left: 400px;
+    padding-left: 200px;
   }
   header .ordi {
     width: 900px;
@@ -257,7 +260,6 @@ header .button {
     bottom: -250px;
   }
   header .button {
-    padding-left: 400px;
     bottom: -250px;
   }
 }
@@ -328,7 +330,7 @@ main .contact {
 }
 
 footer {
-  margin: 5%;
+  margin: 15px 5%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -366,6 +368,6 @@ footer .arrow {
 }
 @media screen and (min-width: 750px) {
   footer .reseaux .div-linkedIn {
-    margin: 0 150px 0 10px;
+    margin: 0 20px 0 10px;
   }
 }/*# sourceMappingURL=style.css.map */
