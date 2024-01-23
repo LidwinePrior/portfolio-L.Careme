@@ -1,19 +1,17 @@
 footer {
-    text-align: center;
-    display: grid;
-    grid-template-areas:
-        "logo reseaux reseaux arrow";
-
-    .logo {
-        grid-area: logo;
-    }
+    margin: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 
     .reseaux {
-        grid-area: reseaux;
         display: flex;
         flex-direction: row;
+        justify-content: center;
+
 
         .div-github {
+            margin: 0 10px;
 
             img {
                 width: 30px;
@@ -22,6 +20,7 @@ footer {
         }
 
         .div-linkedIn {
+            margin: 0 80px 0 10px;
             width: 30px;
             height: 30px;
             background-color: white;
@@ -33,7 +32,7 @@ footer {
     }
 
     .arrow {
-        grid-area: arrow;
+
         width: 30px;
         height: 30px;
         background-color: white;
