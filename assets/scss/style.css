@@ -190,8 +190,8 @@ body button {
   margin-top: 50px;
 }
 @media screen and (min-width: 750px) {
-  .form .form {
-    border: 1px solid pink;
+  .form {
+    width: 500px;
     grid-template-areas: "nom prenom" "email gsm" "message message" "bouton bouton";
   }
 }
@@ -268,6 +268,7 @@ main .portfolio h3 {
   z-index: 5;
 }
 main .portfolio .projects {
+  cursor: pointer;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
@@ -293,6 +294,9 @@ main .about .description {
   margin: auto;
   flex-wrap: wrap;
   width: 80%;
+}
+main .about .description a {
+  text-decoration: underline;
 }
 main .about .description .picture-of-me {
   float: right;
@@ -359,4 +363,9 @@ footer .arrow {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+@media screen and (min-width: 750px) {
+  footer .reseaux .div-linkedIn {
+    margin: 0 150px 0 10px;
+  }
 }/*# sourceMappingURL=style.css.map */

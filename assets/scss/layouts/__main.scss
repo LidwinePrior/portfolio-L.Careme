@@ -7,6 +7,7 @@ main {
         }
 
         .projects {
+            cursor: pointer;
             display: grid;
             grid-template-columns: 1fr 1fr;
             grid-template-rows: 1fr 1fr;
@@ -38,6 +39,10 @@ main {
             margin: auto;
             flex-wrap: wrap;
             width: 80%;
+
+            a {
+                text-decoration: underline;
+            }
 
             .picture-of-me {
                 float: right;

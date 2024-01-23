@@ -41,4 +41,13 @@ footer {
         justify-content: center;
         align-items: center;
     }
+
+    @media screen and (min-width: 750px) {
+        .reseaux {
+            .div-linkedIn {
+                margin: 0 150px 0 10px;
+
+            }
+        }
+    }
 }

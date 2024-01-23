@@ -58,13 +58,11 @@
     }
 
     @media screen and (min-width: 750px) {
-        .form {
-            border: 1px solid pink;
-            grid-template-areas:
-                "nom prenom"
-                "email gsm"
-                "message message"
-                "bouton bouton";
-        }
+        width: 500px;
+        grid-template-areas:
+            "nom prenom"
+            "email gsm"
+            "message message"
+            "bouton bouton";
     }
 }
