@@ -1,7 +1,7 @@
 main {
     .portfolio {
         h3 {
-            margin: 5%;
+            margin: 10% 0 5% 5%;
             position: relative;
             z-index: 5;
         }
@@ -37,6 +37,11 @@ main {
     .about {
         margin: 5%;
 
+        h3 {
+            margin: 10% 0 5% 0;
+
+        }
+
         .description {
             margin: auto;
             flex-wrap: wrap;
@@ -57,6 +62,12 @@ main {
 
     .contact {
         margin: 5%;
+
+        h3 {
+            margin: 10% 0 5% 0;
+
+        }
+
     }
 
 

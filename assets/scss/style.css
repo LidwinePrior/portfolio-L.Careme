@@ -255,7 +255,6 @@ header .ordi {
   right: -25px;
   bottom: -150px;
   z-index: 1;
-  overflow: hidden;
 }
 header .button {
   position: absolute;
@@ -279,18 +278,19 @@ header .button {
     text-align: left;
     padding-left: 200px;
   }
+  header .presentation .button {
+    padding-top: 150px;
+    text-align: left;
+  }
   header .ordi {
     width: 900px;
     right: -45px;
     bottom: -250px;
   }
-  header .button {
-    bottom: -250px;
-  }
 }
 
 main .portfolio h3 {
-  margin: 5%;
+  margin: 10% 0 5% 5%;
   position: relative;
   z-index: 5;
 }
@@ -319,6 +319,9 @@ main .portfolio .projects .proj:hover {
 main .about {
   margin: 5%;
 }
+main .about h3 {
+  margin: 10% 0 5% 0;
+}
 main .about .description {
   margin: auto;
   flex-wrap: wrap;
@@ -334,6 +337,9 @@ main .about .description .picture-of-me {
 }
 main .contact {
   margin: 5%;
+}
+main .contact h3 {
+  margin: 10% 0 5% 0;
 }
 @media screen and (min-width: 750px) {
   main .portfolio {
@@ -357,7 +363,7 @@ main .contact {
 }
 
 footer {
-  margin: 15px 5%;
+  margin: 10% 0 15px 5%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
