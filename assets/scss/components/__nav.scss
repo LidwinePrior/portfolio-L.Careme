@@ -12,16 +12,16 @@
     .mobile-nav {
         /* Par défaut, la liste de navigation mobile est cachée */
         display: none;
+        position: fixed;
         flex-direction: column;
         background-color: rgba(0, 0, 0);
         position: absolute;
-        top: 25px;
+        top: 52px;
         right: 0;
-        width: 100px;
+        width: 110px;
         padding: 20px;
         box-sizing: border-box;
         z-index: 2;
-
 
         a {
 

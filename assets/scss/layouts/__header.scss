@@ -20,16 +20,17 @@ header {
     }
 
     .ordi {
-        width: 250px;
+        width: 350px;
         position: absolute;
-        right: -10px;
-        bottom: 0px;
+        right: -25px;
+        bottom: -150px;
         z-index: 1;
+        overflow: hidden;
     }
 
     .button {
         position: absolute;
-        bottom: -90px;
+        bottom: -100px;
         left: 0px;
         position: relative;
         z-index: 4;
@@ -40,11 +41,11 @@ header {
         height: 100vh;
 
         .presentation {
-            width: 50%;
+            width: 60%;
 
             h1 {
-                text-align: right;
-                padding: 40px;
+                text-align: left;
+                padding: 120px 0 40px 200px;
             }
 
             h2 {
