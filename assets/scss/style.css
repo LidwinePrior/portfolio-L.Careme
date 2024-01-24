@@ -228,8 +228,16 @@ body button {
   }
 }
 
+.logo {
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .logo .mylogo {
   margin: 0;
+  width: 50px;
+  height: 50px;
 }
 
 body {
@@ -249,6 +257,7 @@ header .top {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: end;
   position: relative;
   z-index: 3;
 }
@@ -293,7 +302,7 @@ header .button {
   header .ordi {
     width: 900px;
     right: -45px;
-    bottom: -250px;
+    bottom: -350px;
   }
 }
 
@@ -316,17 +325,25 @@ main .portfolio .projects .proj {
   position: relative;
 }
 main .portfolio .projects .proj img {
+  position: relative;
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  z-index: 7;
+  transition: opacity 0.5s;
 }
 main .portfolio .projects .proj .text-overlay {
+  text-align: center;
   position: relative;
   top: -500px;
+  opacity: 0;
 }
-main .portfolio .projects .proj:hover {
+main .portfolio .projects .proj:hover img {
   opacity: 0.2;
+}
+main .portfolio .projects .proj:hover .text-overlay {
+  opacity: 1;
 }
 main .about {
   margin: 5%;
