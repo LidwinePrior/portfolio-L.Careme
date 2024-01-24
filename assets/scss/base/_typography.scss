@@ -38,12 +38,18 @@ body {
 
     }
 
+    .text-about {
+        text-align: justify;
+    }
+
     button {
         font-size: 15px;
     }
 
     @media screen and (min-width: 750px) {
-        p {
+
+        p,
+        .text-about {
             font-size: 27px;
         }
 

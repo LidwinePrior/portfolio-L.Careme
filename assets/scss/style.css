@@ -41,11 +41,15 @@ body h3 {
   border-bottom: 8px solid white;
   padding-bottom: 30px;
 }
+body .text-about {
+  text-align: justify;
+}
 body button {
   font-size: 15px;
 }
 @media screen and (min-width: 750px) {
-  body p {
+  body p,
+  body .text-about {
     font-size: 27px;
   }
   body h1,
@@ -188,6 +192,7 @@ body button {
   font-size: 18px;
   font-weight: 700;
   margin: 3%;
+  width: 80%;
 }
 .form label {
   font-size: 18px;
@@ -217,6 +222,9 @@ body button {
   .form {
     width: 500px;
     grid-template-areas: "nom prenom" "email gsm" "message message" "bouton bouton";
+  }
+  .form .message #msg {
+    width: 88%;
   }
 }
 
@@ -265,7 +273,7 @@ header .button {
 }
 @media screen and (min-width: 750px) {
   header {
-    height: 100vh;
+    height: 100%;
   }
   header .presentation {
     width: 60%;
@@ -313,6 +321,10 @@ main .portfolio .projects .proj img {
   -o-object-fit: cover;
      object-fit: cover;
 }
+main .portfolio .projects .proj .text-overlay {
+  position: relative;
+  top: -500px;
+}
 main .portfolio .projects .proj:hover {
   opacity: 0.2;
 }
@@ -320,7 +332,7 @@ main .about {
   margin: 5%;
 }
 main .about h3 {
-  margin: 10% 0 5% 0;
+  margin: 0% 0 5% 0;
 }
 main .about .description {
   margin: auto;
@@ -343,7 +355,7 @@ main .contact h3 {
 }
 @media screen and (min-width: 750px) {
   main .portfolio {
-    height: 100vh;
+    height: 100%;
   }
   main .portfolio .projects {
     display: grid;
@@ -351,19 +363,19 @@ main .contact h3 {
     grid-template-rows: 1fr;
   }
   main .about {
-    height: 100vh;
+    height: 100%;
   }
   main .about .description .picture-of-me {
     width: 400px;
     margin-left: 60px;
   }
   main .contact {
-    height: 100vh;
+    height: 100%;
   }
 }
 
 footer {
-  margin: 10% 15px 15px 5%;
+  margin: 10% 5% 15px 5%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;

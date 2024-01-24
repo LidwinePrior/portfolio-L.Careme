@@ -24,6 +24,7 @@
         font-size: 18px;
         font-weight: 700;
         margin: 3%;
+        width: 80%;
     }
 
     label {
@@ -64,5 +65,11 @@
             "email gsm"
             "message message"
             "bouton bouton";
+
+        .message {
+            #msg {
+                width: 88%;
+            }
+        }
     }
 }
