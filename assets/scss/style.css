@@ -22,7 +22,8 @@ body p {
   font-size: 15px;
 }
 body h1,
-body h3 {
+body h3,
+body h4 {
   font-size: 32px;
 }
 body h1,
@@ -238,6 +239,13 @@ body button {
   margin: 0;
   width: 50px;
   height: 50px;
+  -webkit-box-reflect: below 0px linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4));
+}
+@media screen and (min-width: 750px) {
+  .logo .mylogo {
+    width: 80px;
+    height: 80px;
+  }
 }
 
 body {
@@ -257,7 +265,7 @@ header .top {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: end;
+  align-items: center;
   position: relative;
   z-index: 3;
 }
@@ -379,6 +387,12 @@ main .contact h3 {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr;
   }
+  main .portfolio .projects .proj .text-overlay {
+    text-align: center;
+    position: relative;
+    top: -700px;
+    opacity: 0;
+  }
   main .about {
     height: 100%;
   }
@@ -392,10 +406,11 @@ main .contact h3 {
 }
 
 footer {
-  margin: 10% 5% 15px 5%;
+  margin: 10% 5% 35px 5%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: baseline;
 }
 footer .reseaux {
   display: flex;
@@ -407,7 +422,6 @@ footer .reseaux .div-github {
 }
 footer .reseaux .div-github img {
   width: 30px;
-  height: 30px;
 }
 footer .reseaux .div-linkedIn {
   margin: 0 80px 0 10px;
@@ -419,6 +433,9 @@ footer .reseaux .div-linkedIn {
   justify-content: center;
   align-items: center;
 }
+footer .reseaux .div-linkedIn img {
+  width: 15px;
+}
 footer .arrow {
   width: 30px;
   height: 30px;
@@ -428,8 +445,29 @@ footer .arrow {
   justify-content: center;
   align-items: center;
 }
+footer .arrow img {
+  width: 15px;
+}
 @media screen and (min-width: 750px) {
+  footer {
+    margin: 10% 5% 50px 5%;
+  }
+  footer .reseaux .div-github img {
+    width: 50px;
+  }
   footer .reseaux .div-linkedIn {
     margin: 0 20px 0 10px;
+    width: 50px;
+    height: 50px;
+  }
+  footer .reseaux .div-linkedIn img {
+    width: 30px;
+  }
+  footer .arrow {
+    width: 50px;
+    height: 50px;
+  }
+  footer .arrow img {
+    width: 30px;
   }
 }/*# sourceMappingURL=style.css.map */

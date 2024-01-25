@@ -13,8 +13,18 @@
 
     <header id="Home">
         <div class="top">
-            <div class="logo">
-                <img src="./assets/images/logo-neon-orange.png" class="mylogo" alt="my logo">
+            <div class="logo" id="logo">
+                <div class="mask-overlay"></div>
+                <img src="./assets/images/oeil-vide-removebg-preview.png" class="mylogo" alt="my logo">
+                <svg height="0" style="position: absolute;">
+                    <mask id="mask1">
+                        <rect width="100%" height="80" fill="url(#gr)" />
+                        <linearGradient x1="0" y1="0" x2="0" y2="1" id="gr">
+                            <stop offset="50%" stop-color="black" />
+                            <stop offset="100%" stop-color="white" />
+                        </linearGradient>
+                    </mask>
+                </svg>
             </div>
             <div class="navigation">
                 <div class="hamburger-menu" onclick="toggleMobileMenu(event)">
@@ -65,31 +75,44 @@
 
             <div class="projects">
                 <div class="proj">
-                    <img src="./assets/images/meteo.jpg" alt="weather" class="weather">
+                    <a href="https://lidwineprior.github.io/weather-app/" target="_blank"><img
+                            src="./assets/images/meteo.jpg" alt="weather" class="weather"></a>
                     <div class="text-overlay">
                         <h4>Weather app</h4>
-                        <p>izeubcouzhdvcboahz azdbcho pi zohc bh zbcxhb o</p>
+                        <p>Application météo liée à une API.</p>
+                        <p>Languages: HTML, SASS, Javascript.</p>
                     </div>
                 </div>
                 <div class="proj">
-                    <img src="./assets/images/food.jpg" alt="food" class="food">
+                    <a href="https://elibbth.github.io/Kabibi-Food/" target="_blank"><img src="./assets/images/food.jpg"
+                            alt="food" class="food"></a>
                     <div class="text-overlay">
                         <h4>Kabibi-Food</h4>
-                        <p>izeubcouzhdvcboahz azdbcho pi zohc bh zbcxhb o</p>
+                        <p>Création d'une interface à partir d'un template imposé.</p>
+                        <p>Languages: HTML, SASS.</p>
                     </div>
                 </div>
                 <div class="proj">
-                    <img src="./assets/images/pikachu.jpg" alt="pokemon" class="pokemon">
+                    <a href="http://pokedex/" target="_blank"><img src="./assets/images/pikachu.jpg" alt="pokemon"
+                            class="pokemon"></a>
                     <div class="text-overlay">
                         <h4>Pokedex</h4>
-                        <p>izeubcouzhdvcboahz azdbcho pi zohc bh zbcxhb o</p>
+                        <p>Création d'un pokédex repertoriant les pokémons, leurs pouvoirs, ... avce la possibilité de
+                            se connecter/créer son compte pour en mettre en favoris </p>
+                        <p>Concepts: Sanitisation, validation, session, favoris</p>
+                        <p>Languages Back-end: PHP, MySQL.</p>
                     </div>
                 </div>
                 <div class="proj">
-                    <img src="./assets/images/database.jpg" alt="database" class="database">
+                    <a href="https://github.com/LidwinePrior/back-end_cogip?tab=readme-ov-file" target="_blank"><img
+                            src="./assets/images/database.jpg" alt="database" class="database"></a>
                     <div class="text-overlay">
                         <h4>Cogip</h4>
-                        <p>izeubcouzhdvcboahz azdbcho pi zohc bh zbcxhb o</p>
+                        <p>Création d'un API avec tous les paths pour les front-ends afin de créer une interface qui
+                            affiche les entreprises, leurs factures ainsi que leurs contacts</p>
+                        <p>Languages Back-end: PHP, MySQL.</p>
+                        <p>Concepts: API, MVC, CRUD, Router, namespace, sanitisation, validation.</p>
+                        <p>Outils: db4free, heroku.</p>
                     </div>
                 </div>
             </div>
@@ -165,7 +188,7 @@
 
     <footer>
         <div class="logo">
-            <img src="./assets/images/logo-neon-orange.png" class="mylogo" alt="my logo">
+            <img src="./assets/images/oeil-vide-removebg-preview.png" class="mylogo" alt="my logo">
         </div>
         <div class="reseaux">
             <div class="div-github">

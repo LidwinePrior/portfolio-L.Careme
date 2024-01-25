@@ -98,6 +98,15 @@ main {
                 display: grid;
                 grid-template-columns: 1fr 1fr 1fr 1fr;
                 grid-template-rows: 1fr;
+
+                .proj {
+                    .text-overlay {
+                        text-align: center;
+                        position: relative;
+                        top: -700px;
+                        opacity: 0;
+                    }
+                }
             }
         }
 
