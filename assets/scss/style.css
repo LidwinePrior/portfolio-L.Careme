@@ -238,6 +238,7 @@ body button {
   margin: 0;
   width: 50px;
   height: 50px;
+  -webkit-box-reflect: below 0px linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4));
 }
 @media screen and (min-width: 750px) {
   .logo .mylogo {
@@ -408,7 +409,7 @@ footer {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: flex-end;
+  align-items: baseline;
 }
 footer .reseaux {
   display: flex;
@@ -422,7 +423,7 @@ footer .reseaux .div-github img {
   width: 30px;
 }
 footer .reseaux .div-linkedIn {
-  margin: 0 80px 0 10px;
+  margin: 0 40px 0 10px;
   width: 30px;
   height: 30px;
   background-color: white;
