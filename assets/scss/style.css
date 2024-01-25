@@ -107,7 +107,7 @@ body button {
 
 .show-more {
   height: 30px;
-  width: 130px;
+  width: 150px;
   border: 1px solid white;
   background-color: #000000;
   color: white;
@@ -257,7 +257,7 @@ body {
 
 header {
   margin: 0 5%;
-  height: 50vh;
+  height: 60vh;
   position: relative;
 }
 header .top {
