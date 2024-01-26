@@ -1,6 +1,5 @@
 main {
     .portfolio {
-        // height: 100%;
 
         h3 {
             margin: 10% 0 5% 5%;
@@ -27,25 +26,18 @@ main {
                     height: 100%;
                     object-fit: cover;
                     z-index: 7;
-                    transition: opacity 0.5s;
+                    opacity: 0.5;
+
                 }
 
                 .text-overlay {
                     text-align: center;
                     position: relative;
                     top: -500px;
-                    opacity: 0;
+                    opacity: 1;
+                    // text-shadow: ;
                 }
 
-                &:hover {
-                    img {
-                        opacity: 0.2;
-                    }
-
-                    .text-overlay {
-                        opacity: 1;
-                    }
-                }
             }
         }
     }
@@ -72,7 +64,7 @@ main {
             .picture-of-me {
                 float: right;
                 width: 200px;
-                margin-left: 20px;
+                margin: 0 0 10px 20px;
             }
         }
 
@@ -100,11 +92,25 @@ main {
                 grid-template-rows: 1fr;
 
                 .proj {
+                    img {
+                        opacity: 1;
+                    }
+
                     .text-overlay {
                         text-align: center;
                         position: relative;
                         top: -700px;
                         opacity: 0;
+                    }
+
+                    &:hover {
+                        img {
+                            opacity: 0.2;
+                        }
+
+                        .text-overlay {
+                            opacity: 1;
+                        }
                     }
                 }
             }

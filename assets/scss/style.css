@@ -3,6 +3,7 @@
 h1,
 h2,
 h3,
+h4,
 p,
 button,
 a {
@@ -128,6 +129,7 @@ body button {
   border-radius: 10px 0;
   text-transform: uppercase;
   font-weight: 100;
+  cursor: pointer;
 }
 
 .navigation .hamburger-menu {
@@ -254,6 +256,10 @@ body {
   padding: 0;
 }
 
+* {
+  scroll-behavior: smooth;
+}
+
 header {
   margin: 0 5%;
   height: 60vh;
@@ -338,18 +344,12 @@ main .portfolio .projects .proj img {
   -o-object-fit: cover;
      object-fit: cover;
   z-index: 7;
-  transition: opacity 0.5s;
+  opacity: 0.5;
 }
 main .portfolio .projects .proj .text-overlay {
   text-align: center;
   position: relative;
   top: -500px;
-  opacity: 0;
-}
-main .portfolio .projects .proj:hover img {
-  opacity: 0.2;
-}
-main .portfolio .projects .proj:hover .text-overlay {
   opacity: 1;
 }
 main .about {
@@ -369,7 +369,7 @@ main .about .description a {
 main .about .description .picture-of-me {
   float: right;
   width: 200px;
-  margin-left: 20px;
+  margin: 0 0 10px 20px;
 }
 main .contact {
   margin: 5%;
@@ -386,11 +386,20 @@ main .contact h3 {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr;
   }
+  main .portfolio .projects .proj img {
+    opacity: 1;
+  }
   main .portfolio .projects .proj .text-overlay {
     text-align: center;
     position: relative;
     top: -700px;
     opacity: 0;
+  }
+  main .portfolio .projects .proj:hover img {
+    opacity: 0.2;
+  }
+  main .portfolio .projects .proj:hover .text-overlay {
+    opacity: 1;
   }
   main .about {
     height: 100%;
