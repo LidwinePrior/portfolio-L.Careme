@@ -47,7 +47,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 document.getElementById('myForm').addEventListener('submit', async function (event) {
     event.preventDefault();
-    window.confirm("Under Construction! Sorry, l'envoie de la demande n'est pas encore au point.git add ");
+    window.confirm("Under Construction! Sorry, l'envoi de la demande n'est pas encore au point.");
 
     const formData = new FormData(this);
 
