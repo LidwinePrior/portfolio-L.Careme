@@ -1,4 +1,18 @@
 <?php
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
+
+header('Content-Type: application/json');
+
+
+require __DIR__ . '/../../vendor/autoload.php';
+$dotenv = Dotenv\Dotenv::createUnsafeImmutable(__DIR__ . '/../../');
+$dotenv->load();
+
 
 class Validator
 {
@@ -89,15 +103,41 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         // Sujet de l'e-mail
         $subject = "Nouveau formulaire de contact";
 
+        // Configuration de PHPMailer
+        $mail = new PHPMailer(true);
+        $mail->isSMTP();
+        $mail->Host = 'in-v3.mailjet.com'; // Vérifiez si c'est correct pour Mailjet
+        $mail->SMTPAuth = true;
+        $mail->Username = $_ENV['MAILJET_SMTP_USERNAME'];
+        $mail->Password = $_ENV['MAILJET_SMTP_PASSWORD'];
+        $mail->SMTPSecure = 'tls';
+        $mail->Port = 587; // Utilisez le port approprié pour Mailjet
+        $mail->SMTPDebug = 2; // Niveau de débogage : 2 pour les messages détaillés, 3 pour les messages SMTP
+
+
+        // Construction du message PHPMailer
+        $mail->setFrom($email, 'Sender Name');
+        $mail->addAddress($to, 'Receiver Name');
+        $mail->Subject = $subject;
+        $mail->Body = $message;
+
         // Envoi de l'e-mail
-        mail($to, $subject, $message);
+        $mail->send();
+
+        // Debug pour voir ce qui se passe
+        var_dump($mail);
 
         // Envoyer une réponse JSON avec succès
         echo json_encode(['success' => true, 'message' => 'Well done bro!']);
         exit;
-        exit;
     } catch (InvalidArgumentException $e) {
-        // Gérez les erreurs de validation ici
+        // Gérer les erreurs de validation ici
+        $errorMessage = $e->getMessage();
+        // Envoyer une réponse JSON avec erreur
+        echo json_encode(['error' => true, 'message' => $errorMessage]);
+        exit;
+    } catch (Exception $e) {
+        // Gérer les autres exceptions ici
         $errorMessage = $e->getMessage();
         // Envoyer une réponse JSON avec erreur
         echo json_encode(['error' => true, 'message' => $errorMessage]);

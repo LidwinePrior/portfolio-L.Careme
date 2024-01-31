@@ -15,17 +15,7 @@
     <header id="Home">
         <div class="top">
             <div class="logo" id="logo">
-                <div class="mask-overlay"></div>
-                <img src="./assets/images/oeil-vide-removebg-preview.png" class="mylogo" alt="my logo">
-                <svg height="0" style="position: absolute;">
-                    <mask id="mask1">
-                        <rect width="100%" height="80" fill="url(#gr)" />
-                        <linearGradient x1="0" y1="0" x2="0" y2="1" id="gr">
-                            <stop offset="50%" stop-color="black" />
-                            <stop offset="100%" stop-color="white" />
-                        </linearGradient>
-                    </mask>
-                </svg>
+                <img src="./assets/images//logo-brume.png" class="mylogo" alt="my logo">
             </div>
             <div class="navigation">
                 <div class="hamburger-menu" onclick="toggleMobileMenu(event)">
@@ -183,7 +173,7 @@
 
     <footer>
         <div class="logo">
-            <img src="./assets/images/oeil-vide-removebg-preview.png" class="mylogo" alt="my logo">
+            <img src="./assets/images/logo-arc-en-ciel.png" class="mylogo" alt="my logo">
         </div>
         <div class="reseaux">
             <div class="div-github">

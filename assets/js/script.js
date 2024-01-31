@@ -35,6 +35,7 @@ document.addEventListener('DOMContentLoaded', function () {
 //Formulaire
 //gérer les erreurs coté client
 
+// script.js
 document.getElementById('myForm').addEventListener('submit', async function (event) {
     event.preventDefault();
 
@@ -45,17 +46,16 @@ document.getElementById('myForm').addEventListener('submit', async function (eve
             method: 'POST',
             body: formData,
         });
-
+    
         if (!response.ok) {
             throw new Error(`Server responded with status: ${response.status}`);
         }
-
+    
         const result = await response.json();
         handleResponse(result);
     } catch (error) {
-        console.error('Error during fetch:', error);
-    }
-});
+        console.log('Error during fetch:', error);
+    }});
 
 function handleResponse(result) {
     if (result && result.success) {
@@ -64,7 +64,7 @@ function handleResponse(result) {
         const errorContainer = document.getElementById('errorContainer');
         errorContainer.innerHTML = `<p>${result.message}</p>`;
     } else {
-        console.error('Réponse inattendue :', result);
+        console.log('Réponse inattendue :', result);
     }
 }
 
