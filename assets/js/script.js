@@ -36,8 +36,59 @@ document.addEventListener('DOMContentLoaded', function () {
 //gérer les erreurs coté client
 
 // script.js
+// document.getElementById('myForm').addEventListener('submit', async function (event) {
+//     event.preventDefault();
+
+//     // Ajout d'un message d'alerte avant l'envoi de la requête
+//     alert("Under Construction!");
+
+//     const formData = new FormData(this);
+
+//     try {
+//         const response = await fetch('./assets/php/validate-sanitize.php', {
+//             method: 'POST',
+//             body: formData,
+//         });
+
+//         if (!response.ok) {
+//             throw new Error(`Server responded with status: ${response.status}`);
+//         }
+
+//         const result = await response.json();
+//         handleResponse(result);
+
+//         // Réinitialiser le formulaire après le traitement
+//         this.reset();
+//     } catch (error) {
+//         console.log('Error during fetch:', error);
+//     }
+// });
+
+// function handleResponse(result) {
+//     if (result && result.success) {
+//         alert("Under Construction!");
+//     } else if (result && result.error) {
+//         const errorContainer = document.getElementById('errorContainer');
+//         errorContainer.innerHTML = `<p>${result.message}</p>`;
+//     } else {
+//         console.log('Réponse inattendue :', result);
+//     }
+// }
+
+
+
+
+
+
+
+
+
+
+
+
 document.getElementById('myForm').addEventListener('submit', async function (event) {
     event.preventDefault();
+    window.confirm("Under Construction! Sorry, l'envoie de la demande n'est pas encore au point.");
 
     const formData = new FormData(this);
 
@@ -46,20 +97,24 @@ document.getElementById('myForm').addEventListener('submit', async function (eve
             method: 'POST',
             body: formData,
         });
-    
+
         if (!response.ok) {
             throw new Error(`Server responded with status: ${response.status}`);
         }
-    
+
         const result = await response.json();
         handleResponse(result);
     } catch (error) {
         console.log('Error during fetch:', error);
-    }});
+    }
+});
 
 function handleResponse(result) {
     if (result && result.success) {
-        alert("Bien joué ! Ta demande a bien été envoyée. Je donnerai des nouvelles au plus vite !");
+        const userConfirmed = window.confirm("Voulez-vous réinitialiser le formulaire ?");
+        if (userConfirmed) {
+            document.getElementById('myForm').reset();
+        }
     } else if (result && result.error) {
         const errorContainer = document.getElementById('errorContainer');
         errorContainer.innerHTML = `<p>${result.message}</p>`;
@@ -67,14 +122,3 @@ function handleResponse(result) {
         console.log('Réponse inattendue :', result);
     }
 }
-
-
-
-
-
-
-
-
-
-
-
