@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <!-- Pour les navigateurs modernes -->
-    <link rel="icon" href="./assets/images/logo-brume-v2.png">
+    <link rel="icon" href="./assets/images/logo-brume.png">
     <title>Lidwine Carême</title>
     <meta name="author" content="Lidwine">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,7 +17,7 @@
     <header id="Home">
         <div class="top">
             <div class="logo" id="logo">
-                <img src="./assets/images//logo-brume-V2.png" class="mylogo-header" alt="my logo">
+                <img src="./assets/images//logo-brume.png" class="mylogo-header" alt="my logo">
             </div>
             <div class="navigation">
                 <div class="hamburger-menu" onclick="toggleMobileMenu(event)">
@@ -175,7 +175,7 @@
 
     <footer>
         <div class="logo">
-            <img src="./assets/images/logo-brume-V2.png" class="mylogo-footer" alt="my logo">
+            <img src="./assets/images/logo-brume.png" class="mylogo-footer" alt="my logo">
         </div>
         <div class="reseaux">
             <div class="div-github">
