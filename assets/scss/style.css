@@ -71,6 +71,10 @@ body button {
   width: 30px;
   height: 30px;
 }
+.navigation .hamburger-menu .hamburger.open {
+  width: 30px;
+  height: 30px;
+}
 .navigation .mobile-nav {
   /* Par défaut, la liste de navigation mobile est cachée */
   display: none;
@@ -78,7 +82,7 @@ body button {
   flex-direction: column;
   background-color: rgb(0, 0, 0);
   position: absolute;
-  top: 52px;
+  top: 90px;
   right: 0;
   width: 110px;
   padding: 20px;
@@ -140,6 +144,10 @@ body button {
   width: 30px;
   height: 30px;
 }
+.navigation .hamburger-menu .hamburger.open {
+  width: 30px;
+  height: 30px;
+}
 .navigation .mobile-nav {
   /* Par défaut, la liste de navigation mobile est cachée */
   display: none;
@@ -147,7 +155,7 @@ body button {
   flex-direction: column;
   background-color: rgb(0, 0, 0);
   position: absolute;
-  top: 52px;
+  top: 90px;
   right: 0;
   width: 110px;
   padding: 20px;
@@ -308,7 +316,7 @@ header .button {
     padding-left: 200px;
   }
   header .presentation .button {
-    padding-bottom: 150px;
+    padding-top: 150px;
     text-align: left;
   }
   header .ordi {

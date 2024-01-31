@@ -1,15 +1,25 @@
 //HAMBURGER MENU
 //fonction pour display le menu déroulant
-function toggleMobileMenu() {
+function toggleMobileMenu(event) {
     var mobileNav = document.querySelector('.mobile-nav');
+    var hamburgerMenu = document.querySelector('.hamburger-menu');
+ 
+    // Ajouter ou supprimer la classe 'open' sur .hamburger-menu
+    hamburgerMenu.classList.toggle('open');
+ 
     mobileNav.style.display = (mobileNav.style.display === 'flex') ? 'none' : 'flex';
-}
+ }
 
 //fonction pour fermer le menu quand on clique ailleurs
 function closeMobileMenu() {
     var mobileNav = document.querySelector('.mobile-nav');
+    var hamburgerMenu = document.querySelector('.hamburger-menu');
+ 
+    // Supprimer la classe 'open' sur .hamburger-menu
+    hamburgerMenu.classList.remove('open');
+ 
     mobileNav.style.display = 'none';
-}
+ }
 
 
 
@@ -35,60 +45,9 @@ document.addEventListener('DOMContentLoaded', function () {
 //Formulaire
 //gérer les erreurs coté client
 
-// script.js
-// document.getElementById('myForm').addEventListener('submit', async function (event) {
-//     event.preventDefault();
-
-//     // Ajout d'un message d'alerte avant l'envoi de la requête
-//     alert("Under Construction!");
-
-//     const formData = new FormData(this);
-
-//     try {
-//         const response = await fetch('./assets/php/validate-sanitize.php', {
-//             method: 'POST',
-//             body: formData,
-//         });
-
-//         if (!response.ok) {
-//             throw new Error(`Server responded with status: ${response.status}`);
-//         }
-
-//         const result = await response.json();
-//         handleResponse(result);
-
-//         // Réinitialiser le formulaire après le traitement
-//         this.reset();
-//     } catch (error) {
-//         console.log('Error during fetch:', error);
-//     }
-// });
-
-// function handleResponse(result) {
-//     if (result && result.success) {
-//         alert("Under Construction!");
-//     } else if (result && result.error) {
-//         const errorContainer = document.getElementById('errorContainer');
-//         errorContainer.innerHTML = `<p>${result.message}</p>`;
-//     } else {
-//         console.log('Réponse inattendue :', result);
-//     }
-// }
-
-
-
-
-
-
-
-
-
-
-
-
 document.getElementById('myForm').addEventListener('submit', async function (event) {
     event.preventDefault();
-    window.confirm("Under Construction! Sorry, l'envoie de la demande n'est pas encore au point.");
+    window.confirm("Under Construction! Sorry, l'envoie de la demande n'est pas encore au point.git add ");
 
     const formData = new FormData(this);
 
