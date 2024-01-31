@@ -85,7 +85,7 @@
                     <a href="https://github.com/LidwinePrior/Pokedex" target="_blank"><img src="./assets/images/pikachu.jpg" alt="pokemon" class="pokemon"></a>
                     <div class="text-overlay">
                         <h4>Pokedex</h4>
-                        <p>Création d'un pokédex repertoriant les pokémons, leurs pouvoirs, ... avce la possibilité de
+                        <p>Création d'un pokédex répertoriant les pokémons, leurs pouvoirs, ... avec la possibilité de
                             se connecter/créer son compte pour en mettre en favoris </p>
                         <p>Concepts: Sanitisation, validation, session, favoris</p>
                         <p>Languages Back-end: PHP, MySQL.</p>
