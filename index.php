@@ -173,7 +173,7 @@
 
     <footer>
         <div class="logo">
-            <img src="./assets/images/logo-arc-en-ciel.png" class="mylogo" alt="my logo">
+            <img src="./assets/images/logo-brume.png" class="mylogo" alt="my logo">
         </div>
         <div class="reseaux">
             <div class="div-github">
