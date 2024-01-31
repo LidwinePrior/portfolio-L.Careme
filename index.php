@@ -15,7 +15,7 @@
     <header id="Home">
         <div class="top">
             <div class="logo" id="logo">
-                <img src="./assets/images//logo-brume.png" class="mylogo" alt="my logo">
+                <img src="./assets/images//logo-brume.png" class="mylogo-header" alt="my logo">
             </div>
             <div class="navigation">
                 <div class="hamburger-menu" onclick="toggleMobileMenu(event)">
@@ -173,7 +173,7 @@
 
     <footer>
         <div class="logo">
-            <img src="./assets/images/logo-brume.png" class="mylogo" alt="my logo">
+            <img src="./assets/images/logo-brume.png" class="mylogo-footer" alt="my logo">
         </div>
         <div class="reseaux">
             <div class="div-github">

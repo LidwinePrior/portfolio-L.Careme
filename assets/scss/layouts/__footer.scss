@@ -3,7 +3,7 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: baseline;
+    align-items: center;
 
     .reseaux {
         display: flex;
@@ -20,7 +20,7 @@ footer {
         }
 
         .div-linkedIn {
-            margin: 0 40px 0 10px;
+            margin: 0 10px;
             width: 30px;
             height: 30px;
             background-color: white;
@@ -36,7 +36,7 @@ footer {
     }
 
     .arrow {
-
+        margin: 0 10px 0 50px;
         width: 30px;
         height: 30px;
         background-color: white;

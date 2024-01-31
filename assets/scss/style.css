@@ -244,14 +244,18 @@ body button {
   display: flex;
   justify-content: center;
 }
-.logo .mylogo {
+.logo .mylogo-header,
+.logo .mylogo-footer {
   margin: 0;
   width: 100px;
   height: 100px;
+}
+.logo .mylogo-header {
   -webkit-box-reflect: below -30px linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4));
 }
 @media screen and (min-width: 750px) {
-  .logo .mylogo {
+  .logo .mylogo-header,
+  .logo .mylogo-footer {
     width: 150px;
     height: 150px;
   }
@@ -426,7 +430,7 @@ footer {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: baseline;
+  align-items: center;
 }
 footer .reseaux {
   display: flex;
@@ -440,7 +444,7 @@ footer .reseaux .div-github img {
   width: 30px;
 }
 footer .reseaux .div-linkedIn {
-  margin: 0 40px 0 10px;
+  margin: 0 10px;
   width: 30px;
   height: 30px;
   background-color: white;
@@ -453,6 +457,7 @@ footer .reseaux .div-linkedIn img {
   width: 15px;
 }
 footer .arrow {
+  margin: 0 10px 0 50px;
   width: 30px;
   height: 30px;
   background-color: white;
